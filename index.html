@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>변호사닷컴</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="all.css">
 </head>
 
 <body>
@@ -17,11 +18,11 @@
           <h1><img src="images/h_logo.jpg" alt="메인로고"></h1>
         </div>
         <ul>
-          <li><a href="#">법률상담</a></li>
-          <li><a href="#">변호사검색</a></li>
-          <li><a href="#">법률뉴스</a></li>
-          <li><a href="#">법률지식</a></li>
-          <li><a href="#">커뮤니티</a></li>
+          <li><a href="#advice">법률상담</a></li>
+          <li><a href="#search">변호사검색</a></li>
+          <li><a href="#news">법률뉴스</a></li>
+          <li><a href="#news">법률지식</a></li>
+          <li><a href="#board">커뮤니티</a></li>
         </ul>
         <div class="top_menu">
           <div class="top_menu_1">
@@ -44,7 +45,7 @@
     <div id="main">
       <!-- * ADVICE -->
       <div id="advice">
-        <div id="advice_h">
+        <div class="heading">
           <img src="images/tit_sect1.png" alt="법률상담">
           <div class="line"></div>
           <img src="images/tit_sect1_sub.png" alt="법률상담_sub">
@@ -54,33 +55,31 @@
             <img src="images/main_banner2.jpg" alt="">
           </div>
           <div class="ad_right">
-            <div class="advice_menu_top">
-              <div id="ad_1">
-                <span>이혼, 가정</span>
-                <img src="images/ico_consult_part13_off.png" alt="">
-                <p>이혼, 가정의 불안·의문은<br>
+            <div id="ad_1">
+              <span>이혼, 가정</span>
+              <img src="images/ico_consult_part13_off.png" alt="">
+              <p>이혼, 가정의 불안·의문은<br>
                 어떤 일이든 상담해주세요.</p>
-              </div>
-              <div id="ad_2">
-                <span>교통사고</span>
-                <img src="images/ico_consult_part14_off.png" alt="">
-                <p>교통사고의 불안·의문은<br>
+            </div>
+            <div id="ad_2">
+              <span>교통사고</span>
+              <img src="images/ico_consult_part14_off.png" alt="">
+              <p>교통사고의 불안·의문은<br>
                 어떤 일이든 상담해주세요.</p>
-              </div>
-              <div id="ad_3">
-                <span>형사, 범죄</span>
-                <img src="images/ico_consult_part15_off.png" alt="">
-                <p>형사, 범죄의 불안·의문은<br>
+            </div>
+            <div id="ad_3">
+              <span>형사, 범죄</span>
+              <img src="images/ico_consult_part15_off.png" alt="">
+              <p>형사, 범죄의 불안·의문은<br>
                 어떤 일이든 상담해주세요.</p>
-              </div>
             </div>
             <div class="advice_menu_bottom">
               <div class="bottom_title">
                 <h2>더 많은 분야가 궁금하세요?</h2>
-                <div>
+                <div class="pages">
                   <span>1/3</span>
-                  <img src="images/arr_next_type1.gif" alt="">
                   <img src="images/arr_prev_type1.gif" alt="">
+                  <img src="images/arr_next_type1.gif" alt="">
                 </div>
               </div>
               <ul>
@@ -97,26 +96,239 @@
 
       <!-- * SEARCH -->
       <div id="search">
-        <div id="search_h"></div>
-        <div id="search_b"></div>
+        <div class="heading">
+          <img src="images/tit_sect2.png" alt="변호사검색">
+          <div class="line"></div>
+          <img src="images/tit_sect2_sub.png" alt="변호사검색_sub">
+        </div>
+        <div id="search_b">
+          <div class="search_content">
+            <div class="find_lawer">
+              <div class="title">변호사 찾기</div>
+              <div class="content">
+                <p>카테고리별, 지역 별로 내가 찾는 변호사를 손쉽게 찾을 수 있습니다.</p>
+                <div class="find_option">
+                  <select name="field" id="">
+                    <option value="">전문분야</option>
+                  </select>
+                  <select name="region" id="">
+                    <option value="">활동지역</option>
+                  </select>
+                  <button>검색하기</button>
+                  <i class="fa-regular fa-user"></i>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              칼럼
+              <img src="images/ico_search1.png" alt="">
+            </div>
+            <div class="success">
+              성공 사례
+              <img src="images/ico_search2.png" alt="">
+            </div>
+            <div class="stroy">
+              스토리
+              <img src="images/ico_search3.png" alt="">
+            </div>
+          </div>
+          <div class="search_img">
+            <img src="images/bg_banner_sect2.jpg" alt="">
+          </div>
+        </div>
       </div>
 
       <!-- * NEWS -->
       <div id="news">
-        <div id="news_h"></div>
-        <div id="news_b"></div>
+        <div class="heading">
+          <img src="images/tit_sect3.png" alt="뉴스">
+          <div class="line"></div>
+          <img src="images/tit_sect3_sub.png" alt="뉴스_sub">
+        </div>
+        <div id="news_b">
+          <div class="img">
+            <img src="images/bg_banner_sect3.jpg" alt="">
+          </div>
+          <div class="article">
+            <div class="img">
+              <img src="images/news01.jpg" alt="">
+            </div>
+            <div class="article_inner">
+              <div class="news_caption">
+                테러 불안감으로 여행 취소... 수수료 제대로 돌려받으려면
+              </div>
+              <div class="news_content">
+                지난 6월 28일 터키 이스탄불의 아타튀르크 국제공항에서 테러가 발생해 41명이 숨지고 239명이 다쳤다. 올해...
+              </div>
+              <div class="news_meta">
+                <span>[민사.기타]</span>
+                2016-07-06
+              </div>
+            </div>
+          </div>
+          <div class="article">
+            <div class="img">
+              <img src="images/news02.jpg" alt="">
+            </div>
+            <div class="article_inner">
+              <div class="news_caption">
+                아이스커피에 얼음 많이 넣어 소송당한 스타벅스...'집단소...
+              </div>
+              <div class="news_content">
+                지난달 초, 외신은 세계적인 커피체인점 스타벅스가 미국에서 아이스커피에 얼음을 많이 넣어 판다는 이유...
+              </div>
+              <div class="news_meta">
+                <span>[민사.기타]</span>
+                2016-06-14
+              </div>
+            </div>
+          </div>
+          <div class="article">
+            <div class="img">
+              <img src="images/news03.jpg" alt="">
+            </div>
+            <div class="article_inner">
+              <div class="news_caption">
+                앤디 워홀 "그림 직접 그리지 않는다"...조영남은 왜 사기 ...
+              </div>
+              <div class="news_content">
+                (사진 설명: 앤디 워홀의 마릴린 먼로 팝아트/출처:Pixabay) 가수 겸 화가로 활동 중인 조영남 씨가 송기창 ...
+              </div>
+              <div class="news_meta">
+                <span>[형사.범죄]</span>
+                2016-05-25
+              </div>
+            </div>
+          </div>
+          <div class="menus">
+            <div class="menu">
+              <h3>법률지식</h3>
+              <div>법률과 관련된 모든 것을 검색해 보세요. 변호사닷컴에서 알려 드립니다.</div>
+              <img src="images/ico_kin.png" alt="">
+            </div>
+            <div class="menu">
+              <h3>용어사전</h3>
+              <div>일상생활에서 접하기 어려운 법률 용어를 사전 형식으로 제공합니다.</div>
+              <img src="images/ico_dictionary.png" alt="">
+            </div>
+            <div class="menu">
+              <h3>뉴스레터 구독 신청하기</h3>
+              <div class="letter_email">
+                <input type="text">
+                @
+                <input type="text">
+                <select name="" id="">
+                  <option value="">직접입력</option>
+                </select>
+              </div>
+              <div class="accept">
+                <input type="checkbox">
+                <span>뉴스레터 메일 수신에 동의합니다.</span>
+                <button>신청하기</button>
+              </div>
+              <div class="back_img">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- * BOARD -->
       <div id="board">
-        <div id="board_h"></div>
-        <div id="board_b"></div>
+        <div class="heading">
+          <img src="images/tit_sect4.png" alt="커뮤니티">
+          <div class="line"></div>
+          <img src="images/tit_sect4_sub.png" alt="커뮤니티_sub">
+        </div>
+        <div id="board_b">
+          <div class="board_left">
+            <div class="left_content">
+              <div class="title">궁금해요</div>
+              <div class="inner_content">
+                <h3>궁금증을 풀어주시기 바랍니다.</h3>
+                <p>안녕하십니까, 회사 일반 직원입니다. 몇가지 궁금한 점이 있어서 인사 드립니다. 1. 해외업체와 거래 시 만약에 우리가 먼저 돈을 보내고 해외 업체에서 물건을 안보내...</p>
+                <div class="date"><i class="fa-regular fa-clock"></i>2016-08-19</div>
+              </div>
+            </div>
+            <div class="left_content">
+              <div class="title">도와줘요</div>
+              <div class="inner_content">
+                <h3>아파트 베란다 흡연 문제</h3>
+                <p>날씨가 많이 덥습니다. 5년간 에어컨 없이 살고 있는데, 올해는 유독 담배 냄새가 심합니다. 어래층에서 담배를 피우면 마치 저희 집에서 피운 것처럼 담배 냄새가 심...</p>
+                <div class="date"><i class="fa-regular fa-clock"></i>2016-07-14</div>
+              </div>
+            </div>
+            <div class="left_content">
+              <div class="title">도와줘요</div>
+              <div class="inner_content">
+                <h3>세입자 침수피해로 인한 보상때문에 질문드립니다.</h3>
+                <p>-사고일시-사건의경위-손해의 내용-증거유무-장해율-월 소득액-산재보험가입유무 저는 서울 강북에 다세대주택을 1채 가지고있는 집 주인입니다...</p>
+                <div class="date"><i class="fa-regular fa-clock"></i>2016-06-22</div>
+              </div>
+            </div>
+            <div class="left_content">
+              <div class="title">도와줘요</div>
+              <div class="inner_content">
+                <h3>남자친구가 칠순 잔치때 인사를 오랍니다.</h3>
+                <p>4살 연상의 남자 친구를 만난지 약 2년이 되어갑니다. 처음에 잘 맞아서 만났었고, 데이트 비용은 처음 만났을때 한두달은 반반씩 내다가, 이젠 제가 100%로 내...</p>
+                <div class="date"><i class="fa-regular fa-clock"></i>2016-05-17</div>
+              </div>
+            </div>
+          </div>
+          <div class="board_right">
+            <div class="img">
+              <img src="images/bg_banner_sect4.jpg" alt="">
+            </div>
+            <div class="board_link">
+              <h3>억울하고 도움이 필요한 이야기를 들려주세요.</h3>
+              <button>커뮤니티 바로가기</button>
+              <i class="fa-regular fa-comment-dots"></i>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- ! FOOTER -->
+    <div class="sitemap">
+      <div>
+        <p><i class="fa-solid fa-bars"></i>변호사닷컴 서비스 전체보기</p>
+      </div>
+    </div>
     <div id="footer">
-
+      <div class="footer_inner">
+        <div class="footer_left">
+          <nav>
+            <li>회사소개</li>
+            <li>고객센터</li>
+            <li>이용약관</li>
+            <li>개인정보취급방침</li>
+            <li>저작권 정책</li>
+          </nav>
+          <div class="corp_info">
+            <p>서울특별시 구로구 시흥대로 565 모나미빌딩 3층 사업자등록번호 : 108-20-25341</p>
+            <p>대표: 유철헌 전화 02) 537-6947 팩스 02) 6442-6246 메일 info@korea-lawyer.com</p>
+            <p>Copyright &copy; 변호사닷컴 Co.,Ltd. All rights reserved.</p>
+          </div>
+          <div class="rights">
+            <p>변호사닷컴의 모든 컨텐츠는 저작권법의 보호를 받으며 무단전체, 복사, 배포를 금합니다.</p>
+          </div>
+        </div>
+        <div class="footer_right">
+          <div>
+            <p><i class="fa-solid fa-house-laptop"></i> 사이트 개선 의견</p>
+          </div>
+          <div class="opinion">
+            <textarea name="opinion" id="" cols="30" rows="5"></textarea>
+          </div>
+          <div class="opinion_submit">
+            <span>※</span>
+            <span>보내주신 의견에 대한 답변은 별도로 드리지 않고 있습니다.</span>
+            <button>문의하기</button>
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>
